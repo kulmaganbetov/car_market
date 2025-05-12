@@ -30,6 +30,7 @@ urlpatterns = [
     path('cart/', include('cart.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('account/', include('account.urls')),
+    path('ask-ai/', views.ask_ai, name='ask-ai'),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
